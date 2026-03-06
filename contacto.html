@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto · OptimizaIT</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Optimiza<span class="logo-highlight">IT</span></span>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#por-que" class="nav-link">Por qué nosotros</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+            <a href="contacto.html" class="btn btn-header active">Contactar</a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header contacto-hero">
+            <div class="container">
+                <h1>Si quieres dar el salto digital</h1>
+                <p>Ponte en contacto con nosotros.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container contacto-grid">
+                <!-- FORMULARIO -->
+                <div class="contacto-form">
+                    <h2>Enviar mensaje</h2>
+                    <form id="contactForm" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej: María García">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="maria@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">¿Qué necesitas?</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="web">Página web</option>
+                                <option value="automatizacion">Automatización</option>
+                                <option value="ambos">Ambos</option>
+                                <option value="otro">Otro / No estoy seguro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required
+                                placeholder="Cuéntanos tu idea..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- INFO CONTACTO -->
+                <div class="contacto-info">
+                    <h2>Información de contacto</h2>
+                    <div class="contacto-datos">
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>optimizait@gmail.com</p>
+                                <small>Respondemos en &lt;24h</small>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>722562510</p>
+                                <small>Lun-Vie 9:00 a 18:00</small>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horario</h3>
+                                <p>Respuesta rápida siempre</p>
+                                <small>Incluso fines de semana</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- REDES SOCIALES (temporalmente oculto) -->
+            <!--
+            <div class="container">
+                <h2 class="section-title">También por <span class="highlight">redes</span></h2>
+                <div class="redes-grid">
+                    <a href="#" class="red-social">
+                        <i class="fab fa-instagram"></i>
+                        <span>@optimizait</span>
+                    </a>
+                    <a href="#" class="red-social">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>OptimizaIT</span>
+                    </a>
+                    <a href="#" class="red-social">
+                        <i class="fab fa-twitter"></i>
+                        <span>@optimiza_it</span>
+                    </a>
+                </div>
+            </div>
+            -->
+            <!-- FOOTER DENTRO DE CONTACTO -->
+            <footer class="footer">
+                <div class="container footer-container">
+                    <div class="footer-info">
+                        <div class="logo">
+                            <i class="fas fa-rocket"></i>
+                            <span>Optimiza<span class="logo-highlight">IT</span></span>
+                        </div>
+                        <p>Transformamos negocios tradicionales en máquinas digitales.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#servicios">Servicios</a></li>
+                            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacto">
+                        <h3>Contacto</h3>
+                        <p><i class="fas fa-envelope"></i> optimizait@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 722562510</p>
+                        <p><i class="fas fa-clock"></i> Respondemos en 24h</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 OptimizaIT. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("QD51AHrIdeV2NNsJm");
+
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Recolectamos los valores manualmente
+            const templateParams = {
+                nombre: document.getElementById("nombre").value,
+                email: document.getElementById("email").value,
+                telefono: document.getElementById("telefono").value,
+                servicio: document.getElementById("servicio").value,
+                mensaje: document.getElementById("mensaje").value
+            };
+
+            emailjs.send("service_wa28aqb", "template_jqdmcba", templateParams)
+                .then(function () {
+                    alert("Mensaje enviado correctamente.");
+                    document.getElementById("contactForm").reset();
+                }, function (error) {
+                    alert("Error al enviar:\n" + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
+
+</html>
+
+
